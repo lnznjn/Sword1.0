@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #Auther: Kiyotaka
 #Time: 2021/5/24
@@ -35,9 +35,9 @@ def body(command):
         print("\033[1;31mhelp\033[0m -- list of all commands\n")
         print("\033[1;31mexit\033[0m -- exit\n")
     
-    elif command.split(" ")[0] == "set" and command.split("t")[1][0] == ' ':
+    elif command.split(" ")[0] == "set":
 
-        if command.split(" ")[1] == "inter" and command.split(" ")[1].split("r")[1][0] == ' ':
+        if command.split(" ")[1] == "inter":
             
             if len(command.split(" ")[2]) == 0:
                 print("\n\033[1;31mError!!!\033[0m\n")
@@ -55,7 +55,7 @@ def body(command):
                 print("\033[1;32m[+]\033[0m interface => {}".format(inter))
                 print("\033[1;32m[+]\033[0m local_mac => {}".format(src_mac))
         
-        elif command.split(" ")[1] == "gatewayIP" and command.split(" ")[1].split("P")[1][0] == ' ':
+        elif command.split(" ")[1] == "gatewayIP":
             if len(command.split(" ")[2]) ==0:
                 print("\n\033[1;31mError!!!\033[0m\n")
                 print("Enter '\033[1;31mhelp\033[0m' for help\n")
@@ -71,7 +71,7 @@ def body(command):
                 
                 print("\033[1;32m[+]\033[0m gatewayIP => {}".format(gIP))
         
-        elif command.split(" ")[1] == "targetIP" and command.split(" ")[1].split("P")[1][0] == ' ':
+        elif command.split(" ")[1] == "targetIP":
             if len(command.split(" ")[2]) ==0:
                 print("\n\033[1;31mError!!!\033[0m\n")
                 print("Enter '\033[1;31mhelp\033[0m' for help\n")
