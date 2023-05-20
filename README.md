@@ -1,4 +1,2 @@
-# foops_PRA
-This just a little toy written by a high school student.
-
-I'm sure no one will see my repository.
+# SWORD 1.0
+- under linux.
